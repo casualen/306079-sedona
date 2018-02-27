@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Alen Timchenko](https://up.htmlacademy.ru/htmlcss/20/user/306079).
-* Наставник: `Максим Ворожцов`.
+* Наставник: `Максим Ворожцов`(https://htmlacademy.ru/profile/id485797).
 
 ---
 
