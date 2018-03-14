@@ -1,0 +1,48 @@
+table {
+    border: 1px solid black;
+    
+}
+
+.position-box {
+    position: relative;
+}
+
+.position-calendar-img1 {
+    position: absolute;
+    left: 230px;
+    top: -2px;
+    
+    
+}
+
+.position-calendar-img2 {
+    position: absolute;
+    left: 230px;
+    top: 15px;
+}
+
+.position-plus {
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    
+}
+
+.position-minus {
+    position: absolute;
+    left: 100px;
+    top: 0px;
+}
+
+.position-plus2 {
+    position: absolute;
+    left: 380px;
+    top: 0px;
+    
+}
+
+.position-minus2 {
+    position: absolute;
+    left: 280px;
+    top: 0px;
+}
