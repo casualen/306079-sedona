@@ -2,23 +2,27 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона-Отели</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700">
   </head>
   <body>
+   
     <header class="main-header">
       <nav class="main-nav">
-        <ul>
-          <li><a href="info.html" target="_blank">ИНФОРМАЦИЯ</a></li>
-          <li><a href="photo-video.html" target="_blank">ФОТО И ВИДЕО</a></li>
-          <li><a href="site-map.html" target="_blank">КАРТА ШТАТА</a></li>
-          <li><a class="top-nav-current" href="#">ГОСТИНИЦЫ</a></li>
+        <ul class="main-linkslist">
+          <li class="main-links-left"><a href="index.html" target="_blank">Информация</a></li>
+          <li class="main-links-left"><a href="http://www.google.com" target="_blank">Фото и видео</a></li>
+          <li class="main-links-right"><a href="http://www.google.com" target="_blank">Карта штата</a></li>
+          <li class="main-links-right"><a href="hotels.html" target="_blank">Гостиницы</a></li>
         </ul>
-        <a href="index.html" class="header-logo">
+        <a class="header-logo" href="index.html">
           <img class="top-logo" src="img/logo.png" width="138" height="70" alt="Логотип Седона" title="Логотип Седона">
         </a>
       </nav>
     </header>
+    
     <section class="hotels-form">
       <h1 class="visually-hidden">Фильтр поиска гостиниц</h1>
       <form action="/echo" method="post">
@@ -68,8 +72,8 @@
                 <li><p>НАЙДЕНО: 3</p></li>
                 <li><span>СОРТИРОВКА:</span></li>
                 <li><a class="sort-price" href="#">ПО ЦЕНЕ</a></li>
-                <li><a class="sort" href="#">ПО ТИПУ</a></li>
-                <li><a class="sort" href="#">ПО РЕЙТИНГУ</a></li>
+                <li><a class="sort-type" href="#">ПО ТИПУ</a></li>
+                <li><a class="sort-rate" href="#">ПО РЕЙТИНГУ</a></li>
             </ul>
         <div>
             <input type="image" src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по убыванию" title="Сортировка по убыванию">
@@ -119,22 +123,24 @@
       </div>
     </section>
 
-    <footer class="main-footer">
-      <div><span>#visitsedona</span></div>
-      <div class="footer-social">
-        <div class="footer-social">
-          <ul>
-            <li><a class="social-button" href="#"><img src="img/t.svg" width="17" height="15" alt="Twitter icon" title="Наш Twitter"></a></li>
-            <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook icon" title="Наш Facebook"></a></li>
-            <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube icon" title="Наш Youtube"></a></li>
-          </ul>
-        </div>
-        <div>
-          <span>website by</span>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo_name.svg" width="115" height="40" alt="HTML Academy logo" title="Логотип HTML Academy"></a>
-        </div>
-      </div>
-    </footer>
+    <footer class="hotel-footer">
+          <div class="footer-wrap">
+             <span class="hash">#visitsedona</span>
+              
+            <div class="footer-social">
+              <ul class="footer-links">
+                <li><a class="social-button" href="#"><img src="img/t.svg" width="17" height="15" alt="Twitter icon" title="Наш Twitter"></a></li>
+                <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook icon" title="Наш Facebook"></a></li>
+                <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube icon" title="Наш Youtube"></a></li>
+              </ul>
+            </div>
+            <div class="website-logo">
+              <span class="website-span">website by</span>
+                <div class="website-link"><a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo_name.png" width="115" height="40" alt="Логотип HTML Academy" title="Логотип HTML Academy"></a>
+                </div>
+            </div>
+            </div>
+        </footer>
 
   </body>
 </html>

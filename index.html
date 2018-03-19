@@ -4,15 +4,18 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700">
   </head>
   <body>
-    <header class="main-header">
+    
+     <header class="main-header">
       <nav class="main-nav">
-        <ul>
-          <li><a href="info.html">информация</a></li>
-          <li><a href="photo-video.html">фото и видео</a></li>
-          <li><a href="site-map.html">карта штата</a></li>
-          <li><a href="hotels.html">гостиницы</a></li>
+        <ul class="main-linkslist">
+          <li class="main-links-left"><a href="info.html" target="_blank">Информация</a></li>
+          <li class="main-links-left"><a href="http://www.google.com" target="_blank">Фото и видео</a></li>
+          <li class="main-links-right"><a href="http://www.google.com" target="_blank">Карта штата</a></li>
+          <li class="main-links-right"><a href="hotels.html" target="_blank">Гостиницы</a></li>
         </ul>
         <a class="header-logo" href="index.html">
           <img class="top-logo" src="img/logo.png" width="138" height="70" alt="Логотип Седона" title="Логотип Седона">
@@ -22,22 +25,27 @@
 
         <main class="main-container">
           <div class="top-text">
-            <img src="img/welcome-all.png" alt="Добро пожаловать в великолепную Седону" title="Добро пожаловать!">
+           
+            <img class="welcome" src="img/welcome-all.png" alt="Добро пожаловать в великолепную Седону" title="Добро пожаловать!">
+              
+          
+            <img class="shape-top" src="img/shape-top.png" alt="Добро пожаловать в великолепную Седону" title="Добро пожаловать!">
+
           </div>
+          <section class="intro-box">
           <h1>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ<br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
-          <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+          <p class="main-text-under">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+          </section>
           <div class="main-features">
             <div class="feature-left">
               <h2>НАСТОЯЩИЙ ГОРОДОК</h2>
               <span>- №1 -</span>
               <p>СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
-            <div class="feature-right">
-              <img src="img/Layer-10.jpg" width="800" height="400" alt="Фото города Седона"  title="Фото города Седона">
-            </div>
+            <div class="feature-right"></div>
           </div>
             <section class="feature-box">
-              <ul>
+              <ul class="feature-list">
                 <li>
                   <img src="img/icon-1.svg" width="75" height="72" alt="Иконка жилья" title="Жильё">
                   <h3>жильё</h3>
@@ -56,18 +64,16 @@
               </ul>
             </section>
 
-          <div class="main-feature">
-            <div class="bridge-feature-left">
-              <img src="img/Layer-5.jpg" width="800" height="400" alt="Мост дьявола" title="Фото моста дъявола">
-            </div>
-            <div class="bridge-feature-right">
+          <div class="main-features-reverse">
+            <div class="feature-left-bridge"></div>
+            <div class="feature-right-bridge">
               <h2>ТАМ ЕСТЬ МОСТ ДЪЯВОЛА</h2>
               <span>- №2 -</span>
               <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО,<br>ВЫ ОСМЕЛИТЕСЬ</p>
             </div>
           </div>
-            <section class="feature-box">
-              <ul>
+            <section class="second-feature-box">
+              <ul  class="feature-list">
                 <li>
                   <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
                   <span>- №3 -</span>
@@ -88,24 +94,25 @@
 
         </main>
           <aside>
-              <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+              <h3>ЗАИНТЕРЕСОВАЛИСЬ?</h3>
               <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-          </aside>
-            <div class="map">
-              <img src="img/map.jpg" width="1200" height="470" alt="Карта Седона" title="Карта города Седона">
-            </div>
+      </aside>
         <footer class="main-footer">
-          <div><span>#visitsedona</span></div>
+          <div class="footer-wrap">
+             <span class="hash">#visitsedona</span>
+              
             <div class="footer-social">
-              <ul>
+              <ul class="footer-links">
                 <li><a class="social-button" href="#"><img src="img/t.svg" width="17" height="15" alt="Twitter icon" title="Наш Twitter"></a></li>
                 <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook icon" title="Наш Facebook"></a></li>
                 <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube icon" title="Наш Youtube"></a></li>
               </ul>
             </div>
-            <div>
-              <span>website by</span>
-                <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo_name.svg" width="115" height="40" alt="Логотип HTML Academy" title="Логотип HTML Academy"></a>
+            <div class="website-logo">
+              <span class="website-span">website by</span>
+                <div class="website-link"><a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo_name.png" width="115" height="40" alt="Логотип HTML Academy" title="Логотип HTML Academy"></a>
+                </div>
+            </div>
             </div>
         </footer>
         
@@ -118,12 +125,12 @@
           <form action="/echo" method="post">
             <div class="position-box">
                  <label>ДАТА ЗАЕЗДА:
-                  <input type="text" name="date" value="24 АПРЕЛЯ 2017"> 
+                  <input class="form-text" type="text" name="date" value="24 АПРЕЛЯ 2017"> 
                 </label>
                 <br>
                 <div class="position-calendar-img1"><input type="image" src="img/calendar.svg" alt="Дата заезда" title="Кнопка даты заезда"></div>
                 <label>ДАТА ВЫЕЗДА:
-                  <input type="text" name="depart-date" value="4 ИЮЛЯ 2017">
+                  <input  class="form-text" type="text" name="depart-date" value="4 ИЮЛЯ 2017">
                 </label>
                 <div class="position-calendar-img2"><input type="image" src="img/calendar.svg" alt="Дата выезда" title="Кнопка даты выезда"></div>
             </div>
@@ -148,7 +155,7 @@
 
             
 
-
-
+     
+    
   </body>
 </html>
