@@ -328,6 +328,11 @@ table {
     
 }
 
+.hotels-form p {
+    margin: 0;
+    padding: 0;
+}
+
 .footer-wrap {
     display: flex;
     flex-direction: row;
@@ -532,16 +537,102 @@ table {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    border-top: 1px solid lightgrey;
     height: 150px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px 72px;
+    border-top: 1px solid lightgrey;
+}
+
+.result-item:nth-child(3) {
+    border-bottom: 1px solid lightgrey;
+}
+
+.flex-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    margin-left: 30px;
     
 }
 
+.hotel-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
 
+.hotel-flex h3 {
+    margin: 0;
+    padding: 0;
+}
 
+.hotel-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end; 
+    width: 182px;
+}
 
+.hotel-details {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
 
+.button-details  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 27px;
+    width: 110px;
+    background-color: #81b3d2;
+    font-size: 14px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
 
+.button-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 27px;
+    width: 142px;
+    background-color: #766357;
+    font-size: 14px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.rate-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 27px;
+    width: 110px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #666666;
+    font-weight: regular;
+    text-transform: uppercase;
+    margin-left: auto;
+}
 
 
 .visually-hidden {
