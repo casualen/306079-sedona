@@ -99,6 +99,7 @@
       </aside>
         <footer class="main-footer">
           <div class="footer-wrap">
+            
              <span class="hash">#visitsedona</span>
               
             <div class="footer-social">
@@ -124,30 +125,39 @@
           <div class="search-hotel-form">
           <form action="/echo" method="post">
             <div class="position-box">
-                 <label>ДАТА ЗАЕЗДА:
-                  <input class="form-text" type="text" name="date" value="24 АПРЕЛЯ 2017"> 
-                </label>
-                <br>
-                <div class="position-calendar-img1"><input type="image" src="img/calendar.svg" alt="Дата заезда" title="Кнопка даты заезда"></div>
-                <label>ДАТА ВЫЕЗДА:
-                  <input  class="form-text" type="text" name="depart-date" value="4 ИЮЛЯ 2017">
-                </label>
-                <div class="position-calendar-img2"><input type="image" src="img/calendar.svg" alt="Дата выезда" title="Кнопка даты выезда"></div>
+                 <div class="flex-align">
+                  <label for="home-date">ДАТА ЗАЕЗДА:</label>
+                  <input class="form-text" type="text" name="date" id="home-date" value="24 АПРЕЛЯ 2017"> 
+                </div>
+<!--                <div class="position-calendar-img1"><input type="image" src="img/calendar.svg" alt="Дата заезда" title="Кнопка даты заезда"></div>-->
+                <div class="flex-align">
+                    <label for="depart-date">ДАТА ВЫЕЗДА:</label>
+                      <input class="form-text" type="text" name="depart-date" id="depart-date" value="4 ИЮЛЯ 2017">
+                </div>
+<!--                <div class="position-calendar-img2"><input type="image" src="img/calendar.svg" alt="Дата выезда" title="Кнопка даты выезда"></div>-->
             </div>
-            <div class="position-box">
-            <label>ВЗРОСЛЫЕ:
-                <input type="text" name="adults" value="2">
-            </label>
+            <div class="position-box-people">
+            <div class="flex-adults">
+               <label for="adults">ВЗРОСЛЫЕ:</label>
+                <input type="text" name="adults" id="adults" value="2">
+                </div>
+<!--
             <div class="position-plus2"><input type="image" src="img/plus.png" alt="Больше" title="Кнопка плюс"></div>
             <div class="position-minus2"><input type="image" src="img/minus.png" alt="Меньше" title="Кнопка минус"></div>
-            <label>ДЕТИ:
-                <input type="text" name="kids" value="0">
-            </label>
+-->
+           <div class="flex-kids">
+            <label for="kids-line" class="kids">ДЕТИ:</label>
+                <input type="text" name="kids" id="kids-line" value="0">
+                </div>
+              </div>
+              
+<!--        
             <div class="position-plus"><input type="image" src="img/plus.png" alt="Больше" title="Кнопка плюс"></div>
             <div class="position-minus"><input type="image" src="img/minus.png" alt="Меньше" title="Кнопка минус"></div>
             </div>
-            <br>
-            <input type="submit" name="search" id="search" value="НАЙТИ">
+-->
+            
+            <input class="form-button" type="submit" name="search" id="search" value="НАЙТИ">
               
           </form>
         </div>
