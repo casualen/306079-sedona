@@ -574,10 +574,18 @@ table {
 .form-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0 72px;
     box-sizing: inherit;
     height: 220px;
+}
+
+.form-table {
+    margin-left: auto;
+}
+
+.form-types {
+    margin-left: 200px;
 }
 
 .form-infra,
@@ -629,7 +637,7 @@ table {
     display: inline-block;
     height: 23px;
     width: 27px;
-    background-image: url(/img/method.svg);
+    background-image: url(../img/method.svg);
     background-repeat:no-repeat;  
 }
 
@@ -639,7 +647,7 @@ table {
     display: inline-block;
     height: 23px;
     width: 27px;
-    background-image: url(/img/checkbox-off.svg);
+    background-image: url(../img/checkbox-off.svg);
     background-repeat: no-repeat;  
 }
 
