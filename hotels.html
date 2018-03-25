@@ -24,60 +24,65 @@
     </header>
     
     <section class="hotels-form">
-      <h1 class="visually-hidden">Фильтр поиска гостиниц</h1>
       <form action="/echo" method="post">
-      <div>
-          <p>ИНФРАСТРУКТУРА:</p>
-                <label>БАССЕЙН
-                    <input type="checkbox" name="pool" checked>
-                </label>
-            <br>
-                <label>ПАРКОВКА
-                    <input type="checkbox" name="parking">
-                </label>
-            <br>
-                <label>WI-FI
-                    <input type="checkbox" name="wifi">
-                </label>
+      <h1 class="visually-hidden">Фильтр поиска гостиниц</h1>
+      <div class="form-wrapper">
+         <div class="form-infra">
+             <span>ИНФРАСТРУКТУРА:</span>
+                 <input type="checkbox" id="pool" name="pool" checked>
+                 <label for="pool">БАССЕЙН</label>
+             
+                 <input type="checkbox" id="parking" name="parking">
+                 <label for="parking">ПАРКОВКА</label>
+                    
+                 <input type="checkbox" id="wifi" name="wifi">
+                 <label for="wifi">WI&#8722FI</label>     
           </div>
-          <div>
-            <p>ТИП ЖИЛЬЯ:</p>
-                <label>ГОСТИНИЦА
-                    <input type="checkbox" name="motel" checked>
-                </label>
-                <label>ОТЕЛЬ
-                    <input type="checkbox" name="hotel" checked>
-                </label>
-                <label>АПАРТАМЕНТЫ
-                    <input type="checkbox" name="apartment" checked>
-                </label>
+          <div class="form-types">
+              <span>ТИП ЖИЛЬЯ:</span>
+                 <input type="checkbox" id="motel" name="motel" checked>
+                 <label for="motel">ГОСТИНИЦА</label>
+               
+                 <input type="checkbox" name="hotel" id="hotel" checked>
+                 <label for="hotel">ОТЕЛЬ</label>
+                
+                 <input type="checkbox" id="apartment" name="apartment" checked>
+                 <label for="apartment">АПАРТАМЕНТЫ</label>
           </div>
-          <div>
-              <table>
-                  <tr>
-                  <td>ОТ 0</td>
-                  <td>ДО 3000</td>
-                  </tr>
-              </table>
-                <label for="cost-per-day">СТОИМОСТЬ В СУТКИ(Р):</label>
-                   <input type="range" name="cost-per-day" id="cost-per-day" min="0" max="3000" step="1" value="2500">
-              <button class="showhotel-btn" type="button">ПОКАЗАТЬ</button>
+          <div class="form-table">
+              <p>Стоимость в сутки (р):</p>
+              <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                          <div class="scale">
+                              <div class="bar"></div>
+                          </div>
+                            <div class="range-toggle range-toggle-min"></div>
+                            <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+              
           </div>
-        </form>
-      
+        
+      </div>
+      </form>
     </section>
     <section class="search-results">
         <h2 class="visually-hidden">Результаты поиска отеля</h2>
-            <ul>
-                <li><p>НАЙДЕНО: 3</p></li>
+                <div class="found"><span>НАЙДЕНО: 3</span></div>
+                <div class="sort-found">
+                <ul class="sort-section">                
                 <li><span>СОРТИРОВКА:</span></li>
                 <li><a class="sort-price" href="#">ПО ЦЕНЕ</a></li>
                 <li><a class="sort-type" href="#">ПО ТИПУ</a></li>
                 <li><a class="sort-rate" href="#">ПО РЕЙТИНГУ</a></li>
             </ul>
-        <div>
-            <input type="image" src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по убыванию" title="Сортировка по убыванию">
+        <div class="sort-buttons">
             <input type="image" src="img/icon-up-dir.svg" width="11" height="10" alt="Сортировка по возрастанию" title="Сортировка по возрастанию">
+            <input class="sort-button-active" type="image" src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по убыванию" title="Сортировка по убыванию">
+                    </div>
         </div>
     </section>
 
@@ -87,7 +92,7 @@
           <div class="flex-img"><img src="img/amara-resort.jpg" width="135" height="90" alt="AMARA RESORT &amp; SPA" title="AMARA RESORT &amp; SPA"></div>
         <div class="box-flex">
         <div class="hotel-flex">    
-            <h3 class="hotel-name">AMARA RESORT &amp; SPA</h3>
+            <a class="hotel-name" href="#" target="_blank">AMARA RESORT &amp; SPA</a>
             <img src="img/hotel-stars.png" width="90" height="17" alt="Рейтинг заведения" title="Рейтинг заведения">
         </div>
         <div class="hotel-price">
@@ -106,8 +111,8 @@
           <div class="flex-img"><img src="img/desert.jpg" width="135" height="90" alt="DESERT QUAIL INN" title="DESERT QUAIL INN"></div>
           <div class="box-flex">
           <div class="hotel-flex">
-          <h3 class="hotel-name">DESERT QUAIL INN</h3>
-          <img src="img/hotel-stars.png" width="90" height="17" alt="Рейтинг заведения" title="Рейтинг заведения">
+          <a class="hotel-name" href="#" target="_blank">DESERT QUAIL INN</a>
+              <div class="three-stars"><img src="img/hotel-stars.png" width="90" height="17" alt="Рейтинг заведения" title="Рейтинг заведения"></div>
               </div>
           <div class="hotel-price">
               <span>МОТЕЛЬ</span>
@@ -125,8 +130,8 @@
         <div class="flex-img"><img src="img/villas.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO" title="VILLAS AT POCO DIABLO"></div>
         <div class="box-flex">
         <div class="hotel-flex">
-        <h3 class="hotel-name">VILLAS AT POCO DIABLO</h3>
-        <img src="img/hotel-stars.png" width="90" height="17" alt="Рейтинг заведения" title="Рейтинг заведения">
+        <a class="hotel-name" href="#" target="_blank">VILLAS AT POCO DIABLO</a>
+        <div class="two-stars"><img src="img/hotel-stars.png" width="90" height="17" alt="Рейтинг заведения" title="Рейтинг заведения"></div>
         </div>
         <div class="hotel-price">
             <span>АПАРТАМЕНТЫ</span>
