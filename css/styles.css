@@ -116,6 +116,7 @@ a {
 .top-text{
     position: relative;
     height: 510px;
+    background-color: #ffffff;
     background-image: url(../img/background-photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -189,6 +190,7 @@ a {
 }
 
 .feature-right {
+    background-color: #ffffff;
     background-image: url(../img/Layer-10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -241,6 +243,7 @@ a {
 
 
 .feature-left-bridge {
+    background-color: #ffffff;
     background-image: url(../img/Layer-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -313,7 +316,7 @@ aside {
     height: 295px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center
         
     
@@ -323,41 +326,21 @@ aside h3 {
     font-size: 30px;
     line-height: 36px;
     font-weight: bold;
-}
-
-aside h3 {
+    font-family: "PT Sans", "Arial", sans-serif;
     margin-top: 57px;
     margin-bottom: 0;
     padding: 0;
 }
 
-.search-top {
-    display: flex;
-    justify-content: center;
-    width: 570px;
-    background-color: #766357;
-    height: 87px;
-    font-size: 21px;
-    font-family: "PT Sans" "Arial" sans-serif;
-    color: #ffffff;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 26px;
-
+aside p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
+    color: #000000;
 }
 
 
-
-
-
-
-
-
-
-table {
-    border: 1px solid black;
-    
-}
 
 .position-box {
     position: relative;
@@ -445,6 +428,12 @@ table {
 }
 
 
+
+
+
+
+
+
 .hotels-form p {
     margin: 0;
     padding: 0;
@@ -460,8 +449,17 @@ table {
     opacity: 0.9;
     width: 100%;
     position: absolute;
-   
-    z-index: 5;
+    z-index: 5;  
+}
+
+.hotel-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    box-sizing: border-box;
     
 }
 
@@ -564,21 +562,65 @@ svg:active .html-logo {
 ----------------форма поиска отеля на главной странице-----------------
 */
 .search-hotel-form {
-    display: flex;
+    display: none;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     width: 570px;
-    height: 365px;
-    border: 1px solid grey;
-    
-    
-
-   
+    background: #fff;
+    position: absolute;
+    top: 2175px;
+    left: 28%;
+    height: 400px;
+    box-shadow: 0px 17px 25px 5px rgba(204,204,204,0.52);
     
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-90px);
+  }
+
+  70% {
+    transform: translateY(0px);
+  }
+
+  90% {
+    transform: translateY(-0px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.search-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 570px;
+    background-color: #766357;
+    height: 87px;
+    font-size: 21px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 26px;
+    border-style: none;
+    position: absolute;
+    left: 28%;
+    top: 2088px;
+
+}
+
+
+
+
 .search-show {
-    display: block;
+    display: flex;
+    animation: bounce 0.4s;
+    z-index: 12;
 }
 
 
@@ -699,6 +741,8 @@ svg:active .html-logo {
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+  border-style: none;
+    
 }
 
 .form-button:hover {
@@ -717,6 +761,7 @@ svg:active .html-logo {
 
 .hotels-form {
     height: 220px;
+    background-color:  #ffffff;
     background-image: url(../img/hotels-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -757,17 +802,17 @@ svg:active .html-logo {
 .form-types label,
 .form-table label {
     font-size: 14px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  color: #ffffff;
-  font-weight:normal;
-  text-transform: uppercase;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #ffffff;
+    font-weight:normal;
+    text-transform: uppercase;
 }
 
 
 
 .form-infra input[type="checkbox"]:checked,
 .form-types nput[type="checkbox"]:checked {
-    display: none;   
+    display: none;
 }
 
 .form-infra input[type="checkbox"],
@@ -790,7 +835,7 @@ svg:active .html-logo {
     height: 23px;
     width: 27px;
     background-image: url(../img/method.svg);
-    background-repeat:no-repeat;  
+    background-repeat:no-repeat;
 }
 
 .form-infra input[type="checkbox"] + label,
@@ -966,14 +1011,19 @@ svg:active .html-logo {
     display: flex;
     align-items: center;
     margin-left: auto;
-    opacity: 0.3;
 }
 
 
 
 
-.sort-button-active {
-    margin-left: 12px;
+
+.sort-button:nth-child(2) {
+    margin-left: 10px;
+}
+
+svg:active .sort-button {
+    opacity: 1;
+    fill: #81b3d2;
 }
 
 
@@ -1008,25 +1058,18 @@ svg:active .html-logo {
 .sort-section li:nth-child(3) {
     margin-right: 35px; 
 }
-
-.sort-section a:active {
-    color: #81b3d2;
-}
-
-.sort-section a:hover {
-    color: #81b3d2;
-    text-decoration: underline;
-}
-
-.sort-section a:visited {
-    color: #000000;
-    text-decoration:none;
-}
-
 .sort-section a {
     color: #cacaca;
 }
 
+.sort-section a:hover {
+    color: #81b3d2;
+    text-decoration: none;
+}
+
+.sort-section a:active {
+    color: #000000;
+}
 
 .search-results li {
     display: inline-block;
@@ -1075,22 +1118,24 @@ svg:active .html-logo {
 }
 
 
-.hotel-name:active {
-    color: #cacaca;
-}
+
 
 .hotel-name:hover {
     color: #81b3d2;
 }
 
+.hotel-name:active {
+    color: #cacaca;
+}
+
 .three-stars {
-    width: 6.5%;
+    width: 70px;
     overflow: hidden;
     margin-left: auto;
 }
 
 .two-stars {
-    width: 4%;
+    width: 45px;
     overflow: hidden;
     margin-left: auto;
 }
