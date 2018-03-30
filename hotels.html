@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Седона-Отели</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700">
+    <link rel="stylesheet" href="css/min-styles.css">
   </head>
   <body>
    <div class="body-container">
@@ -30,25 +30,25 @@
       <div class="form-wrapper">
          <div class="form-infra">
              <span>ИНФРАСТРУКТУРА:</span>
-                 <input tabindex="0" type="checkbox" id="pool" name="pool"  checked>
-                 <label for="pool">БАССЕЙН</label>
+                 <input type="checkbox" id="pool" name="pool"  checked>
+                 <label tabindex="0" for="pool">БАССЕЙН</label>
              
                  <input type="checkbox" id="parking" name="parking" tabindex="0">
-                 <label for="parking">ПАРКОВКА</label>
+                 <label tabindex="0" for="parking">ПАРКОВКА</label>
                     
                  <input type="checkbox" id="wifi" name="wifi" tabindex="0">
-                 <label for="wifi">WI-FI</label>     
+                 <label tabindex="0" for="wifi">WI-FI</label>     
           </div>
           <div class="form-types">
               <span>ТИП ЖИЛЬЯ:</span>
                  <input type="checkbox" id="motel" name="motel" tabindex="0" checked >
-                 <label for="motel">ГОСТИНИЦА</label>
+                 <label tabindex="0" for="motel">ГОСТИНИЦА</label>
                
                  <input type="checkbox" name="hotel" id="hotel" tabindex="0" checked>
-                 <label for="hotel">МОТЕЛЬ</label>
+                 <label tabindex="0" for="hotel">МОТЕЛЬ</label>
                 
                  <input type="checkbox" id="apartment" name="apartment" tabindex="0" checked>
-                 <label for="apartment">АПАРТАМЕНТЫ</label>
+                 <label tabindex="0" for="apartment">АПАРТАМЕНТЫ</label>
           </div>
           <div class="form-table">
               <p>Стоимость в сутки (р):</p>
@@ -64,9 +64,7 @@
                             <div class="range-toggle range-toggle-max"></div>
               </div>
               <button class="btn-transparent" type="submit">Показать</button>
-              
           </div>
-        
       </div>
       </form>
     </section>
