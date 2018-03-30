@@ -3,9 +3,10 @@ var popup = document.querySelector(".search-hotel-form");
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.add("search-show");
-  });
-
-
-
-
+     if (popup.classList.contains("search-hide")) {
+     popup.classList.remove("search-hide");
+     } 
+    else {
+        popup.classList.add("search-hide");
+    }
+});
