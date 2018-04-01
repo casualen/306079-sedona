@@ -454,7 +454,7 @@ aside p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: relative;
     height: 595px;
     background-color: #ffffff;
@@ -482,6 +482,7 @@ aside p {
     opacity: 0.9;
     width: 100%;
     position: absolute;
+    bottom: 0;
     z-index: 5;  
 }
 
@@ -893,6 +894,7 @@ svg:active .html-logo {
     content: "";
     display: inline-block;
     height: 23px;
+    max-width: 150px;
     vertical-align: middle;
     background-image: url(../img/method.svg);
     background-repeat:no-repeat;
@@ -1169,6 +1171,7 @@ svg:active .sort-button {
 
 .hotel-name {
   font-size: 21px;
+  max-width: 500px;
   font-family: "PT Sans" "Arial" sans-serif;
   color: #000000;
   font-weight: bold;
