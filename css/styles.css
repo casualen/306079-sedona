@@ -1,14 +1,14 @@
 .body-container {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: auto;
     box-shadow: 0px 5px 12px 2px rgba(194,194,194,0.72);
     box-sizing: border-box;
     max-width: 1200px;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    
+    padding-left: 40px;
+    padding-right: 40px;
     background-color: white;
     font-size: 14px;
     color: #333333;
@@ -90,12 +90,12 @@ a {
     color: #81b3d2;
 }
 
-.main-linkslist a:active {
-    color: #cacaca;  
-}
-
 .main-linkslist a:focus {
     color: #81b3d2;
+}
+
+.main-linkslist a:active {
+    color: #cacaca;  
 }
 
 .current-page a {
@@ -518,9 +518,12 @@ aside p {
    display: flex;
    align-items: center;
    justify-content: center;
-    padding-left: 18.5%;
+    padding-left: 18.1%;
 } 
 
+.website-span {
+    min-width: 80px;
+}
 
 svg:hover .html-logo{
     fill: #669ec0;
@@ -576,7 +579,7 @@ svg:active .html-logo {
     background: #fff;
     position: absolute;
     top: 2171px;
-    left: 24.8%;
+    left: 25.8%;
     height: 400px;
     box-shadow: 0px 17px 25px 5px rgba(204,204,204,0.52);
     
@@ -619,7 +622,7 @@ svg:active .html-logo {
     line-height: 26px;
     border-style: none;
     position: absolute;
-    left: 24.8%;
+    left: 25.8%;
     top: 2084px;
 
 }
@@ -899,11 +902,10 @@ svg:active .html-logo {
 
 .price-controls input {
   width: 50px;
+  min-height: 35px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
@@ -1042,17 +1044,17 @@ svg:active .sort-button {
 
 .sort-section a:link {
     color: #cacaca;
-    text-decoration: underline;
+    border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-section a:hover {
     color: #81b3d2;
-    text-decoration: underline;
+    border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-section a:active {
     color: #000000;
-    text-decoration: none;
+    border-bottom-style: none;
 }
 
 .search-results li {
