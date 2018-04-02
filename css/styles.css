@@ -340,7 +340,7 @@ aside {
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center
         
     
@@ -361,7 +361,7 @@ aside p {
     line-height: 24px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: normal;
-    padding-top: 5px;
+    padding-bottom: 24px;
     color: #000000;
 }
 
@@ -624,7 +624,7 @@ svg:active .html-logo {
     background: #fff;
     position: absolute;
     top: 2171px;
-    left: 25.8%;
+    left: 27.9%;
     height: 400px;
     -webkit-box-shadow: 0px 17px 25px 5px rgba(204,204,204,0.52);
     -moz-box-shadow: 0px 17px 25px 5px rgba(204,204,204,0.52);
@@ -670,9 +670,7 @@ svg:active .html-logo {
     text-transform: uppercase;
     line-height: 26px;
     border-style: none;
-    position: absolute;
-    left: 25.8%;
-    top: 2084px;
+    
 
 }
 
