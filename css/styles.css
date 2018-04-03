@@ -339,7 +339,8 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    position: relative;
         
     
 }
@@ -621,7 +622,7 @@ svg:active .html-logo {
     width: 47.5%;
     background: #fff;
     position: absolute;
-    top: 2171px;
+    top: 295px;
     left: 26.25%;
     height: 400px;
     -webkit-box-shadow: 0px 17px 25px 5px rgba(204,204,204,0.52);
